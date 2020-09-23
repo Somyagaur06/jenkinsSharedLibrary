@@ -1,5 +1,5 @@
 
-def call(){
+def call(String name='demo'){
   
   
   pipeline{
