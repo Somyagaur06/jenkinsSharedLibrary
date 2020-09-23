@@ -29,7 +29,7 @@ def call(){
           
           steps{
    
-     dir('/var/lib/jenkins/workspace/declarativeDemo/jenkinsDemo'){
+     dir('/var/lib/jenkins/workspace/sharedLibraryDemo/jenkinsDemo'){
   
          sh "mvn clean package"
          
@@ -44,7 +44,7 @@ def call(){
           
           sshagent(['deploy_user']){
           
-         sh " scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/declarativeDemo/jenkinsDemo/target/*.war ubuntu@172.31.1.78:/opt/apache-tomcat/webapps "
+         sh " scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/sharedLibraryDemo/jenkinsDemo/target/*.war ubuntu@172.31.1.78:/opt/apache-tomcat/webapps "
 
           
           }
