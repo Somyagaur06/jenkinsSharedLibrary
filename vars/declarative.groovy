@@ -71,3 +71,4 @@ This is to inform you that your recent build is successfull.''', cc: '', from: '
           }
 
         }
+}
