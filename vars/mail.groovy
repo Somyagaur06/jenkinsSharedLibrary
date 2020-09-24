@@ -2,9 +2,9 @@
 def call(Map parameter){
   
   
-  pipeline{
+  nodes{
     
-    agent any
+   
     environment{
     
     PATH="/usr/share/maven/bin/:$PATH"
@@ -12,7 +12,7 @@ def call(Map parameter){
  
 
     
-    stages{
+    
         
        stage("Git checkout")
        {
@@ -77,7 +77,7 @@ This is to inform you that your recent build is success.''', cc: '', from: '', r
  
  
  
- }
+ 
  
  
  
