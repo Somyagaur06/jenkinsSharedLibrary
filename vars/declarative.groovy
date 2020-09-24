@@ -1,4 +1,4 @@
-def call(){
+def call(Map value){
 pipeline{
     
     agent any
