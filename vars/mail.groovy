@@ -55,24 +55,7 @@ def call(Map parameter){
           
           }
           
-          post{
-           failure{
-             mail bcc: '', body: '''Hi,
-
-This is to inform you that your recent build is failed.''', cc: '', from: '', replyTo: '', subject: 'Jenkins Build Failure ', to: 'gaursomya@yahoo.com'
           
-          }
-          
-          
-          success{
-          
-       mail bcc: '', body: '''Hi,
-
-This is to inform you that your recent build is success.''', cc: '', from: '', replyTo: '', subject: 'Jenkins Build Sucess ', to: 'gaursomya@yahoo.com'
-          
-          
-          }
-          }
           
  
  
