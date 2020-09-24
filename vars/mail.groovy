@@ -2,7 +2,7 @@
 def call(Map parameter){
   
   
-  nodes{
+  node{
     
    
     environment{
