@@ -20,7 +20,7 @@ stage("Maven Build"){
 
  dir("/var/lib/jenkins/workspace/sharedLibrary2/jenkinsDemo"){
 
-docker.image('maven:7').inside{
+docker.image('maven:3.3.3-jdk-8').inside{
  
  
 
