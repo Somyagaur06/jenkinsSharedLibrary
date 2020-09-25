@@ -22,11 +22,7 @@ stage("Maven Build"){
 
 docker.image('maven:3.3.3-jdk-8').inside{
  
- 
-
-
-
-sh "mvn clean package"
+ sh "mvn clean package"
 
 }}}
 
