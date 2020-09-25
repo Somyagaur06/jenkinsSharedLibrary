@@ -22,7 +22,7 @@ docker.image('maven:latest').inside{
  
  
 
-sh "cd /var/lib/jenkins/workspace/declarativeDemo/jenkinsDemo"
+sh "cd /var/lib/jenkins/workspace/sharedLibrary/jenkinsDemo"
 
 sh "mvn clean package"
 
