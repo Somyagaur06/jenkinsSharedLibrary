@@ -1,4 +1,3 @@
-
 def call(){
 
 
@@ -25,7 +24,7 @@ sh "cd /var/lib/jenkins/workspace/declarativeDemo/jenkinsDemo"
 
 sh "mvn clean package"
 
-}
+}}
 
 
 stage("Tomcat Deployment"){
