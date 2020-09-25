@@ -19,6 +19,8 @@ stage("Maven Build"){
 
 
 docker.image('maven:latest').inside{
+ 
+ sh "sudo chmod 666 /var/run/docker.sock"
 
 sh "cd /var/lib/jenkins/workspace/declarativeDemo/jenkinsDemo"
 
