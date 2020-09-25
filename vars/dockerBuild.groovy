@@ -2,6 +2,11 @@ def call(){
 
 
 node{
+ 
+  environment{
+    
+    PATH="/var/lib/jenkins/workspace/sharedLibrary2/jenkinsDemo"
+ }
 
 
 
@@ -22,7 +27,7 @@ docker.image('maven:latest').inside{
  
  
 
-sh "cd /var/lib/jenkins/workspace/sharedLibrary2/jenkinsDemo"
+
 
 sh "mvn clean package"
 
