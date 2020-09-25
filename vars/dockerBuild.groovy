@@ -34,7 +34,7 @@ stage("Tomcat Deployment"){
 
 sshagent(['deploy_user']){
           
-  sh " scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/declarativeDemo/jenkinsDemo/target/*.war ubuntu@172.31.1.78:/opt/apache-tomcat/webapps "
+  sh " scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/sharedLibrary2/jenkinsDemo/target/*.war ubuntu@172.31.1.78:/opt/apache-tomcat/webapps "
 
           
           }}
