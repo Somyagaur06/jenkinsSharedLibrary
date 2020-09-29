@@ -2,6 +2,7 @@ def call(){
 
 
 node{
+ var myImage
  
   
 
@@ -20,18 +21,21 @@ stage("Maven Build"){
 
  dir("/var/lib/jenkins/workspace/ansibleDemo/jenkinsDemo"){
 
-docker.image('maven:3.3.3-jdk-8').inside{
+myImage=docker.image('maven:3.3.3-jdk-8')
+  myImage.inside{
  
  sh "mvn clean package"
 
 }}}
+ 
 
  
  stage("Tomcat Deployment by Ansible"){
   
+  myImage.inside{
   ansiblePlaybook credentialsId: 'ubuntu', disableHostKeyChecking: true, installation: 'ansible', inventory: 'inventory.inv', playbook: 'tomcatDeploy.yaml'
  }
-          
+ }
           
 
 
