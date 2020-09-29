@@ -30,12 +30,7 @@ myImage=docker.image('maven:3.3.3-jdk-8')
  
 
  
- stage("Tomcat Deployment by Ansible"){
-  
-  myImage.inside{
-  ansiblePlaybook credentialsId: 'ubuntu', disableHostKeyChecking: true, installation: 'ansible', inventory: 'inventory.inv', playbook: 'tomcatDeploy.yaml'
- }
- }
+ 
           
 
 
