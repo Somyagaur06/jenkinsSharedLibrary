@@ -18,7 +18,7 @@ node{
 
 stage("Maven Build"){
 
- dir("/var/lib/jenkins/workspace/sharedLibrary2/jenkinsDemo"){
+ dir("/var/lib/jenkins/workspace/ansibleDemo/jenkinsDemo"){
 
 docker.image('maven:3.3.3-jdk-8').inside{
  
